@@ -13,26 +13,23 @@
 &lt;li>pedsa_s.tar.gz: PEDSA服務端的程式及設定檔等 ，解開的目錄名稱為pedsa_s&lt;/li>
 &lt;li>pedsa_c.tar.gz: PEDSA使用端的程式及設定檔，解開的目錄名稱為pets_dir_v1&lt;/li>
 &lt;li>pedsa_images.tar.gz: PEDSA系統所需映像檔，解開的目錄名稱為pedsa_images&lt;/li>
-&lt;li>dockerd-src-v26-withTLSCert1012.tar.gz: docker離線安裝程式 ，解開的目錄名稱為dockerd-src&lt;/li>
+&lt;li>dockerd-src-v26-withTLSCert1012.tar.gz: docker離線安裝程式，解開的目錄名稱為dockerd-src&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;/ul>
-&lt;ol start="2">
+&lt;ol>
 &lt;li>PEDSA服務端系統安裝步驟：
 a. &lt;code>source deploy_PEDSA/deploy_pedsa.sh&lt;/code>，輸入指定安裝路徑($DEPLOY_DIR)。
 i. &lt;code>$DEPLOY_DIR&lt;/code>階層結構：
-&lt;ul>
-&lt;li>dockerd-src&lt;/li>
-&lt;li>pedsa_images&lt;/li>
-&lt;li>pedsa_s&lt;/li>
-&lt;li>pets_dir_v1
+- dockerd-src
+- pedsa_images
+- pedsa_s
+- pets_dir_v1
 b.&lt;code>source $DEPLOY_DIR/dockerd-src/create_docker_env.sh&lt;/code>，輸入
-a. Host IP: docker host ip address # 啊為啥不直接寫個script抓本機IP就好？？？甚至根本不用手動輸入啊？？？
-b. PEDSA安裝目錄：即&lt;code>$DEPLOY_DIR/&lt;/code>
-c. Host User PSWD: # 如果user不是sudoer確定可以？？？
-d. pass phrase for ./ca-key.pem: iclw200@ ＃這到底是什麼鬼？？？&lt;/li>
-&lt;/ul>
-&lt;/li>
+i. Host IP: docker host ip address # 啊為啥不直接寫個script抓本機IP就好？？？甚至根本不用手動輸入啊？？？
+ii. PEDSA安裝目錄：即&lt;code>$DEPLOY_DIR/&lt;/code>
+iii. Host User PSWD: # 如果user不是sudoer確定可以？？？
+iiii. pass phrase for ./ca-key.pem: iclw200@ ＃這到底是什麼鬼？？？&lt;/li>
 &lt;/ol>
 &lt;p>NOTE: 指令執行完畢會建立docker環境，docker network，及mount下載目錄。安裝過程有幾個可能發生狀況，若是主機是第一次安裝docker環境，並在執行docker的基本指令，如docker ps，出現權限不足的錯誤時，需關閉目前的terminal，再開啟新的terminal再進行後續步驟。 # r u sure ???
 NOTE:若是看到下載目錄不存在的提示，則需執行mount下載目錄的程式，這會在安裝服務端的步驟(step4)詳述。&lt;/p></description></item><item><title/><link>https://pedsa-wiki.cape.tw/zh/docs/chapter1/tr/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pedsa-wiki.cape.tw/zh/docs/chapter1/tr/</guid><description>&lt;h1 id="隱私共享資料傳輸trtony">
