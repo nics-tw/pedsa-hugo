@@ -14,41 +14,78 @@ PEDSA 啟動:會介紹如何啟動服務端及使用端系統，詳細的內容�
 
 導入機關選擇硬體規格時，可參考表 1 的基準資料及表 2的硬體資訊:
 表1: 基準資料特徵
-| 資料筆數 | 預估大小 | 欄位 | 直接識別 | 間接識別 | 敏感欄位 |
-| 1,000,000 | 1G | 15 | 2 | 6 | 4 |
+
+  
+      
+          資料筆數
+          預估大小
+          欄位
+          直接識別
+          間接識別
+          敏感欄位
+      
+  
+  
+      
+          1,000,000
+          1G
+          15
+          2
+          6
+          4
+      
+  
+
 表2: 建議之硬體資源
-| 最低需求 | CPU(core) | RAM(GB) | Storage(GB) |
-| K匿名 | 8 | 16 | 1024 |
-| 合成資料 | 8 | 32 | 512 |
-| 差分隱私 | 4 | 16 | 256 |'><meta name=theme-color media="(prefers-color-scheme: light)" content="#ffffff"><meta name=theme-color media="(prefers-color-scheme: dark)" content="#343a40"><meta name=color-scheme content="light dark"><meta property="og:url" content="https://pedsa-wiki.cape.tw/zh/docs/chapter1/install/"><meta property="og:site_name" content="PEDSA Wiki"><meta property="og:title" content="安裝流程"><meta property="og:description" content='本系統手冊將描述如何在 Linux Ubuntu 系統上利用 docker 部署微服務架構，進而組成 PEDSA 系統。安裝的流程如圖 3:
+
+  
+      
+          最低需求
+          CPU(core)
+          RAM(GB)
+          Storage(GB)
+      
+  
+  
+      
+          K匿名
+          8
+          16
+          1024
+      
+      
+          合成資料
+          8
+          32
+          512
+      
+      
+          差分隱私
+          4
+          16
+          256
+      
+  
+
+PEDSA 建議於 Linux Ubuntu 22.04 LTS 版本進行安裝。表 1 及表 2 的推論過程放在附錄的"環境評估資源"段落，方便導入機關做進一步探討。'><meta name=theme-color media="(prefers-color-scheme: light)" content="#ffffff"><meta name=theme-color media="(prefers-color-scheme: dark)" content="#343a40"><meta name=color-scheme content="light dark"><meta property="og:url" content="https://pedsa-wiki.cape.tw/zh/docs/chapter1/install/"><meta property="og:site_name" content="PEDSA Wiki"><meta property="og:title" content="安裝流程"><meta property="og:description" content='本系統手冊將描述如何在 Linux Ubuntu 系統上利用 docker 部署微服務架構，進而組成 PEDSA 系統。安裝的流程如圖 3:
 TODO:
 系統環境資源建議：此步驟會依據基準資料列出所需的主機的基本需求，導入機關再依據需求的資料量、分析案例規模彈性調整主機的硬體資源。
 執行環境安裝:在主機上安裝 docker 執行環境，建置 docker 網路及安裝 PEDSA 應用程式。
 PEDSA 啟動:會介紹如何啟動服務端及使用端系統，詳細的內容於"前置作業及軟硬體介紹"章節解說。
 安裝前置作業及軟硬體介紹 # 系統環境資源建議 # 導入機關選擇硬體規格時，可參考表 1 的基準資料及表 2的硬體資訊:
 表1: 基準資料特徵
-| 資料筆數 | 預估大小 | 欄位 | 直接識別 | 間接識別 | 敏感欄位 | | 1,000,000 | 1G | 15 | 2 | 6 | 4 |
-表2: 建議之硬體資源
-| 最低需求 | CPU(core) | RAM(GB) | Storage(GB) | | K匿名 | 8 | 16 | 1024 | | 合成資料 | 8 | 32 | 512 | | 差分隱私 | 4 | 16 | 256 |'><meta property="og:locale" content="zh"><meta property="og:type" content="article"><meta property="article:section" content="docs"><meta property="article:modified_time" content="2024-11-13T18:01:03+08:00"><title>安裝流程 | PEDSA Wiki</title>
-<link rel=icon href=/favicon.png><link rel=manifest href=/manifest.json><link rel=canonical href=https://pedsa-wiki.cape.tw/zh/docs/chapter1/install/><link rel=stylesheet href=/book.min.434035e7885c7f5d12818bd9f111cf1a0925c6fb78382667381c3d5eda3fb4f1.css integrity="sha256-Q0A154hcf10SgYvZ8RHPGgklxvt4OCZnOBw9Xto/tPE=" crossorigin=anonymous><script defer src=/fuse.min.js></script><script defer src=/zh.search.min.ae45b6d0ba2b7dc5049e1287255d4729461c2d303328f4ebb458e0fd2f437694.js integrity="sha256-rkW20LorfcUEnhKHJV1HKUYcLTAzKPTrtFjg/S9DdpQ=" crossorigin=anonymous></script><script defer src=/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js integrity="sha256-b2+Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC+NdcPIvZhzk=" crossorigin=anonymous></script></head><body dir=ltr><input type=checkbox class="hidden toggle" id=menu-control>
+資料筆數 預估大小 欄位 直接識別 間接識別 敏感欄位 1,000,000 1G 15 2 6 4 表2: 建議之硬體資源
+最低需求 CPU(core) RAM(GB) Storage(GB) K匿名 8 16 1024 合成資料 8 32 512 差分隱私 4 16 256 PEDSA 建議於 Linux Ubuntu 22.04 LTS 版本進行安裝。表 1 及表 2 的推論過程放在附錄的"環境評估資源"段落，方便導入機關做進一步探討。'><meta property="og:locale" content="zh"><meta property="og:type" content="article"><meta property="article:section" content="docs"><meta property="article:modified_time" content="2024-11-13T18:06:26+08:00"><title>安裝流程 | PEDSA Wiki</title>
+<link rel=icon href=/favicon.png><link rel=manifest href=/manifest.json><link rel=canonical href=https://pedsa-wiki.cape.tw/zh/docs/chapter1/install/><link rel=stylesheet href=/book.min.434035e7885c7f5d12818bd9f111cf1a0925c6fb78382667381c3d5eda3fb4f1.css integrity="sha256-Q0A154hcf10SgYvZ8RHPGgklxvt4OCZnOBw9Xto/tPE=" crossorigin=anonymous><script defer src=/fuse.min.js></script><script defer src=/zh.search.min.ca29e2e9b6090a1d36e4ffb537b3f212970df808f1d7d9633d3a2cf2159edb47.js integrity="sha256-yini6bYJCh025P+1N7PyEpcN+Ajx19ljPTos8hWe20c=" crossorigin=anonymous></script><script defer src=/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js integrity="sha256-b2+Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC+NdcPIvZhzk=" crossorigin=anonymous></script></head><body dir=ltr><input type=checkbox class="hidden toggle" id=menu-control>
 <input type=checkbox class="hidden toggle" id=toc-control><main class="container flex"><aside class=book-menu><div class=book-menu-content><nav><h2 class=book-brand><a class="flex align-center" href=/zh/><span>PEDSA Wiki</span></a></h2><div class="book-search hidden"><input type=text id=book-search-input placeholder=搜索 aria-label=搜索 maxlength=64 data-hotkeys=s/><div class="book-search-spinner hidden"></div><ul id=book-search-results></ul></div><script>document.querySelector(".book-search").classList.remove("hidden")</script><ul class=book-languages><li><input type=checkbox id=languages class=toggle>
 <label for=languages class="flex justify-between"><a role=button class="flex align-center"><img src=/svg/translate.svg class=book-icon alt=Languages>
 Chinese</a></label><ul><li><a href=/>English</a></li></ul></li></ul><ul><li class=book-section-flat><a href=/zh/docs/chapter1/>PEDSA 使用教學</a><ul><li><a href=/zh/docs/chapter1/install/ class=active>安裝流程</a></li><li><a href=/zh/docs/chapter1/gau_1/>Gau 1</a></li><li><a href=/zh/docs/chapter1/tr/>Tr</a></li></ul></li></ul><ul><li><a href=https://github.com/alex-shpak/hugo-book target=_blank rel=noopener>Github</a></li><li><a href=https://themes.gohugo.io/themes/hugo-book/ target=_blank rel=noopener>Hugo Themes</a></li></ul></nav><script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script></div></aside><div class=book-page><header class=book-header><div class="flex align-center justify-between"><label for=menu-control><img src=/svg/menu.svg class=book-icon alt=Menu></label><h3>安裝流程</h3><label for=toc-control><img src=/svg/toc.svg class=book-icon alt="Table of Contents"></label></div><aside class="hidden clearfix"><nav id=TableOfContents><ul><li><a href=#安裝前置作業及軟硬體介紹>安裝前置作業及軟硬體介紹</a><ul><li><a href=#系統環境資源建議>系統環境資源建議</a></li><li><a href=#執行環境安裝>執行環境安裝</a><ul><li><a href=#部署步驟優化分服務端與使用端>部署步驟優化(分服務端與使用端)</a></li></ul></li></ul></li></ul></nav></aside></header><article class="markdown book-article"><p>本系統手冊將描述如何在 Linux Ubuntu 系統上利用 docker 部署微服務架構，進而組成 PEDSA 系統。安裝的流程如圖 3:</p><p><img src=%e4%bb%a5%e5%be%8c%e8%a3%9c alt=部署流程圖> TODO:</p><p>系統環境資源建議：此步驟會依據基準資料列出所需的主機的基本需求，導入機關再依據需求的資料量、分析案例規模彈性調整主機的硬體資源。</p><p>執行環境安裝:在主機上安裝 docker 執行環境，建置 docker 網路及安裝 PEDSA 應用程式。</p><p>PEDSA 啟動:會介紹如何啟動服務端及使用端系統，詳細的內容於"前置作業及軟硬體介紹"章節解說。</p><h1 id=安裝前置作業及軟硬體介紹>安裝前置作業及軟硬體介紹
 <a class=anchor href=#%e5%ae%89%e8%a3%9d%e5%89%8d%e7%bd%ae%e4%bd%9c%e6%a5%ad%e5%8f%8a%e8%bb%9f%e7%a1%ac%e9%ab%94%e4%bb%8b%e7%b4%b9>#</a></h1><h2 id=系統環境資源建議>系統環境資源建議
-<a class=anchor href=#%e7%b3%bb%e7%b5%b1%e7%92%b0%e5%a2%83%e8%b3%87%e6%ba%90%e5%bb%ba%e8%ad%b0>#</a></h2><p>導入機關選擇硬體規格時，可參考表 1 的基準資料及表 2的硬體資訊:</p><p>表1: 基準資料特徵</p><p>| 資料筆數 | 預估大小 | 欄位 | 直接識別 | 間接識別 | 敏感欄位 |
-| 1,000,000 | 1G | 15 | 2 | 6 | 4 |</p><p>表2: 建議之硬體資源</p><p>| 最低需求 | CPU(core) | RAM(GB) | Storage(GB) |
-| K匿名 | 8 | 16 | 1024 |
-| 合成資料 | 8 | 32 | 512 |
-| 差分隱私 | 4 | 16 | 256 |</p><p>PEDSA 建議於 Linux Ubuntu 22.04 LTS 版本進行安裝。表 1 及表 2 的推論過程放在附錄的"環境評估資源"段落，方便導入機關做進一步探討。</p><h2 id=執行環境安裝>執行環境安裝
+<a class=anchor href=#%e7%b3%bb%e7%b5%b1%e7%92%b0%e5%a2%83%e8%b3%87%e6%ba%90%e5%bb%ba%e8%ad%b0>#</a></h2><p>導入機關選擇硬體規格時，可參考表 1 的基準資料及表 2的硬體資訊:</p><p>表1: 基準資料特徵</p><table><thead><tr><th>資料筆數</th><th>預估大小</th><th>欄位</th><th>直接識別</th><th>間接識別</th><th>敏感欄位</th></tr></thead><tbody><tr><td>1,000,000</td><td>1G</td><td>15</td><td>2</td><td>6</td><td>4</td></tr></tbody></table><p>表2: 建議之硬體資源</p><table><thead><tr><th>最低需求</th><th>CPU(core)</th><th>RAM(GB)</th><th>Storage(GB)</th></tr></thead><tbody><tr><td>K匿名</td><td>8</td><td>16</td><td>1024</td></tr><tr><td>合成資料</td><td>8</td><td>32</td><td>512</td></tr><tr><td>差分隱私</td><td>4</td><td>16</td><td>256</td></tr></tbody></table><p>PEDSA 建議於 Linux Ubuntu 22.04 LTS 版本進行安裝。表 1 及表 2 的推論過程放在附錄的"環境評估資源"段落，方便導入機關做進一步探討。</p><h2 id=執行環境安裝>執行環境安裝
 <a class=anchor href=#%e5%9f%b7%e8%a1%8c%e7%92%b0%e5%a2%83%e5%ae%89%e8%a3%9d>#</a></h2><h3 id=部署步驟優化分服務端與使用端>部署步驟優化(分服務端與使用端)
 <a class=anchor href=#%e9%83%a8%e7%bd%b2%e6%ad%a5%e9%a9%9f%e5%84%aa%e5%8c%96%e5%88%86%e6%9c%8d%e5%8b%99%e7%ab%af%e8%88%87%e4%bd%bf%e7%94%a8%e7%ab%af>#</a></h3><p>考量部分導入機關需在隔離的環境中進行軟體安裝，提供shell script 和 tar 檔案，允許在沒有網際網路連接的情況下，經由 tar 檔案取得安裝所需的所有檔案，並透過 shell script 執行安裝指令，以確保在受限的環境中也能夠順利地部署系統。</p><h4 id=解壓縮-pedsa-系統程式及相關工具軟體>解壓縮 PEDSA 系統程式及相關工具軟體
 <a class=anchor href=#%e8%a7%a3%e5%a3%93%e7%b8%ae-pedsa-%e7%b3%bb%e7%b5%b1%e7%a8%8b%e5%bc%8f%e5%8f%8a%e7%9b%b8%e9%97%9c%e5%b7%a5%e5%85%b7%e8%bb%9f%e9%ab%94>#</a></h4><p><code>deploy_PEDSA_1012.tar.gz</code> 包含 PEDSA 系統所需的程式及第三方工具軟體，首先執行</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sh data-lang=sh><span style=display:flex><span>source tar -xzvf deploy_PEDSA_1012.tar.gz
-</span></span></code></pre></div><p>解壓縮後會產生目錄 deploy_PEDSA，目錄的內容如表 3:</p><p>表3: 部署檔案說明</p><p>| 檔案名稱 | 說明 |
-| deploy_pedsa.sh | 部署 PEDSA 的安裝程式，即是解壓縮下面的*.tar.gz，並修正目錄權限。 |
-| pedsa_s.tar.gz | PEDSA 服務端的程式及設定檔等，解開的目錄名稱為 pedsa_s |
-| pedsa_c.tar.gz | PEDSA 使用端的程式及設定檔，解開的目錄名稱為 pets_dir_v1 |
-| pedsa_images.tar.gz | PEDSA 系統所需映像檔，解開的目錄名稱為 pedsa_images |
-| dockerd-src-v26-withTLSCert1012.tar.gz | docker 離線安裝程式 ，解開的目錄名稱為 dockerd-src |</p><h4 id=pedsa-服務端系統之安裝步驟>PEDSA 服務端系統之安裝步驟
+</span></span></code></pre></div><p>解壓縮後會產生目錄 deploy_PEDSA，目錄的內容如表 3:</p><p>表3: 部署檔案說明</p><table><thead><tr><th>檔案名稱</th><th>說明</th></tr></thead><tbody><tr><td>deploy_pedsa.sh</td><td>部署 PEDSA 的安裝程式，即是解壓縮下面的*.tar.gz，並修正目錄權限。</td></tr><tr><td>pedsa_s.tar.gz</td><td>PEDSA 服務端的程式及設定檔等，解開的目錄名稱為 pedsa_s</td></tr><tr><td>pedsa_c.tar.gz</td><td>PEDSA 使用端的程式及設定檔，解開的目錄名稱為 pets_dir_v1</td></tr><tr><td>pedsa_images.tar.gz</td><td>PEDSA 系統所需映像檔，解開的目錄名稱為 pedsa_images</td></tr><tr><td>dockerd-src-v26-withTLSCert1012.tar.gz</td><td>docker 離線安裝程式 ，解開的目錄名稱為 dockerd-src</td></tr></tbody></table><h4 id=pedsa-服務端系統之安裝步驟>PEDSA 服務端系統之安裝步驟
 <a class=anchor href=#pedsa-%e6%9c%8d%e5%8b%99%e7%ab%af%e7%b3%bb%e7%b5%b1%e4%b9%8b%e5%ae%89%e8%a3%9d%e6%ad%a5%e9%a9%9f>#</a></h4><h5 id=step1>Step1
 <a class=anchor href=#step1>#</a></h5><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sh data-lang=sh><span style=display:flex><span>cd deploy_PEDSA
 </span></span><span style=display:flex><span>source ./deploy_pedsa.sh
@@ -61,7 +98,6 @@ Chinese</a></label><ul><li><a href=/>English</a></li></ul></li></ul><ul><li clas
 </span></span></code></pre></div><p>安裝系統需要的映像檔</p><h6 id=step4>Step4
 <a class=anchor href=#step4>#</a></h6><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sh data-lang=sh><span style=display:flex><span>cd pedsa_s
 </span></span><span style=display:flex><span>source ./petsStartUp.sh
-</span></span></code></pre></div><p>安裝服務端過程中需輸入以下參數：</p><ul><li>輸入 PEDSA 安裝目錄: 此安裝目錄就是 pedsa_s 的所在位置，以上圖為例 ， pedsa_s 的位置為 /home/itri-pedsa/deploy_PEDSA，則輸入 PEDSA 安裝目錄就為 /home/itri-pedsa/deploy_PEDSA</li><li>主機 IP(例如 34.81.71.21): docker 宿主主機的 IP 地址</li><li>Host User Password: 輸入主機使用者密碼，若是沒有使用者密碼則不需輸入</li></ul><p>安裝後須注意下列狀況:</p><ul><li>若是在 Step2 看到下載目錄不存在的提示或是無法下載檔案，則執行<code>source ./mountDownloadFilePATH.sh</code>，執行過程需輸入以下參數：<ul><li>輸入 PEDSA 安裝目錄: 輸入服務端 pedsa_s 的安裝位置</li><li>Host User Password: 輸入主機使用者密碼，若是沒有使用者密碼則不需輸入
-執行完畢需重新執行 <code>source ./petsStartUp.sh</code>。</li></ul></li><li>若發現使用端無法上傳資料給服務端，則執行<code>source ./gen_ssh_key.sh</code>，執行過程有數個提示如下：<ul><li>輸入 PEDSA 使用端的安裝目錄: 當 pets_dir_v1 的路徑為 /home/itripedsa/deploy_PEDSA/pets_dir_v1 則安裝目錄取 /home/itri-pedsa/deploy_PEDSA</li><li>輸入 PEDSA 使用端的使用者名稱: 安裝使用端主機的使用者名稱</li><li>輸入 PEDSA 使用端的使用者密碼: 安裝使用端主機的使用者密碼</li><li>輸入 PEDSA 使用端的 IP: 安裝使用端主機的 IP 地址</li></ul></li></ul></article><footer class=book-footer><div class="flex flex-wrap justify-between"><div><a class="flex align-center" href=https://github.com/alex-shpak/hugo-book/commit/06338bac2229b41353b265da64b45fe9a5092351 title='最后修改者 CharlesChiuGit | 2024-11-13' target=_blank rel=noopener><img src=/svg/calendar.svg class=book-icon alt>
+</span></span></code></pre></div><p>安裝服務端過程中需輸入以下參數：</p><ul><li>輸入 PEDSA 安裝目錄: 此安裝目錄就是 pedsa_s 的所在位置，以上圖為例 ， pedsa_s 的位置為 /home/itri-pedsa/deploy_PEDSA，則輸入 PEDSA 安裝目錄就為 /home/itri-pedsa/deploy_PEDSA</li><li>主機 IP(例如 34.81.71.21): docker 宿主主機的 IP 地址</li><li>Host User Password: 輸入主機使用者密碼，若是沒有使用者密碼則不需輸入</li></ul><p>安裝後須注意下列狀況:</p><ul><li>若是在 Step2 看到下載目錄不存在的提示或是無法下載檔案，則執行<code>source ./mountDownloadFilePATH.sh</code>，執行過程需輸入以下參數與後續步驟：<ul><li>輸入 PEDSA 安裝目錄: 輸入服務端 pedsa_s 的安裝位置</li><li>Host User Password: 輸入主機使用者密碼，若是沒有使用者密碼則不需輸入</li><li>執行完畢需重新執行 <code>source ./petsStartUp.sh</code>。</li></ul></li><li>若發現使用端無法上傳資料給服務端，則執行<code>source ./gen_ssh_key.sh</code>，執行過程有數個提示如下：<ul><li>輸入 PEDSA 使用端的安裝目錄: 當 pets_dir_v1 的路徑為 /home/itripedsa/deploy_PEDSA/pets_dir_v1 則安裝目錄為 /home/itri-pedsa/deploy_PEDSA</li><li>輸入 PEDSA 使用端的使用者名稱: 安裝使用端主機的使用者名稱</li><li>輸入 PEDSA 使用端的使用者密碼: 安裝使用端主機的使用者密碼</li><li>輸入 PEDSA 使用端的 IP: 安裝使用端主機的 IP 地址</li></ul></li></ul></article><footer class=book-footer><div class="flex flex-wrap justify-between"><div><a class="flex align-center" href=https://github.com/alex-shpak/hugo-book/commit/3b522ab12020432e54834341d3bfeb7cb9e9b6b6 title='最后修改者 CharlesChiuGit | 2024-11-13' target=_blank rel=noopener><img src=/svg/calendar.svg class=book-icon alt>
 <span>2024-11-13</span></a></div><div><a class="flex align-center" href=https://github.com/alex-shpak/hugo-book/edit/main/exampleSite/content.zh/docs/chapter1/install.md target=_blank rel=noopener><img src=/svg/edit.svg class=book-icon alt>
 <span>编辑本页</span></a></div></div><script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script></footer><div class=book-comments></div><label for=menu-control class="hidden book-menu-overlay"></label></div><aside class=book-toc><div class=book-toc-content><nav id=TableOfContents><ul><li><a href=#安裝前置作業及軟硬體介紹>安裝前置作業及軟硬體介紹</a><ul><li><a href=#系統環境資源建議>系統環境資源建議</a></li><li><a href=#執行環境安裝>執行環境安裝</a><ul><li><a href=#部署步驟優化分服務端與使用端>部署步驟優化(分服務端與使用端)</a></li></ul></li></ul></li></ul></nav></div></aside></main></body></html>

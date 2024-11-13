@@ -14,13 +14,60 @@
 &lt;/h2>
 &lt;p>導入機關選擇硬體規格時，可參考表 1 的基準資料及表 2的硬體資訊:&lt;/p>
 &lt;p>表1: 基準資料特徵&lt;/p>
-&lt;p>| 資料筆數 | 預估大小 | 欄位 | 直接識別 | 間接識別 | 敏感欄位 |
-| 1,000,000 | 1G | 15 | 2 | 6 | 4 |&lt;/p>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>資料筆數&lt;/th>
+ &lt;th>預估大小&lt;/th>
+ &lt;th>欄位&lt;/th>
+ &lt;th>直接識別&lt;/th>
+ &lt;th>間接識別&lt;/th>
+ &lt;th>敏感欄位&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>1,000,000&lt;/td>
+ &lt;td>1G&lt;/td>
+ &lt;td>15&lt;/td>
+ &lt;td>2&lt;/td>
+ &lt;td>6&lt;/td>
+ &lt;td>4&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
 &lt;p>表2: 建議之硬體資源&lt;/p>
-&lt;p>| 最低需求 | CPU(core) | RAM(GB) | Storage(GB) |
-| K匿名 | 8 | 16 | 1024 |
-| 合成資料 | 8 | 32 | 512 |
-| 差分隱私 | 4 | 16 | 256 |&lt;/p></description></item><item><title/><link>https://pedsa-wiki.cape.tw/zh/docs/chapter1/gau_1/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pedsa-wiki.cape.tw/zh/docs/chapter1/gau_1/</guid><description>&lt;h1 id="隱私共享優化佈署方案gau">
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>最低需求&lt;/th>
+ &lt;th>CPU(core)&lt;/th>
+ &lt;th>RAM(GB)&lt;/th>
+ &lt;th>Storage(GB)&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>K匿名&lt;/td>
+ &lt;td>8&lt;/td>
+ &lt;td>16&lt;/td>
+ &lt;td>1024&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>合成資料&lt;/td>
+ &lt;td>8&lt;/td>
+ &lt;td>32&lt;/td>
+ &lt;td>512&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>差分隱私&lt;/td>
+ &lt;td>4&lt;/td>
+ &lt;td>16&lt;/td>
+ &lt;td>256&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;p>PEDSA 建議於 Linux Ubuntu 22.04 LTS 版本進行安裝。表 1 及表 2 的推論過程放在附錄的&amp;quot;環境評估資源&amp;quot;段落，方便導入機關做進一步探討。&lt;/p></description></item><item><title/><link>https://pedsa-wiki.cape.tw/zh/docs/chapter1/gau_1/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pedsa-wiki.cape.tw/zh/docs/chapter1/gau_1/</guid><description>&lt;h1 id="隱私共享優化佈署方案gau">
  隱私共享優化佈署方案(GAU)
  &lt;a class="anchor" href="#%e9%9a%b1%e7%a7%81%e5%85%b1%e4%ba%ab%e5%84%aa%e5%8c%96%e4%bd%88%e7%bd%b2%e6%96%b9%e6%a1%88gau">#&lt;/a>
 &lt;/h1>
