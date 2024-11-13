@@ -67,7 +67,68 @@
  &lt;/tr>
  &lt;/tbody>
 &lt;/table>
-&lt;p>PEDSA 建議於 Linux Ubuntu 22.04 LTS 版本進行安裝。表 1 及表 2 的推論過程放在附錄的&amp;quot;環境評估資源&amp;quot;段落，方便導入機關做進一步探討。&lt;/p></description></item><item><title/><link>https://pedsa-wiki.cape.tw/zh/docs/chapter1/gau_1/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pedsa-wiki.cape.tw/zh/docs/chapter1/gau_1/</guid><description>&lt;h1 id="隱私共享優化佈署方案gau">
+&lt;p>PEDSA 建議於 Linux Ubuntu 22.04 LTS 版本進行安裝。表 1 及表 2 的推論過程放在附錄的&amp;quot;環境評估資源&amp;quot;段落，方便導入機關做進一步探討。&lt;/p></description></item><item><title>網路設定</title><link>https://pedsa-wiki.cape.tw/zh/docs/chapter1/network/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pedsa-wiki.cape.tw/zh/docs/chapter1/network/</guid><description>&lt;h1 id="docker-介紹與-docker-環境建置">
+ Docker 介紹與 Docker 環境建置
+ &lt;a class="anchor" href="#docker-%e4%bb%8b%e7%b4%b9%e8%88%87-docker-%e7%92%b0%e5%a2%83%e5%bb%ba%e7%bd%ae">#&lt;/a>
+&lt;/h1>
+&lt;p>如前所述(執行環境安裝的 step2)，進入 dockerd-src 目錄，執行&lt;code>source create_docker_env.sh&lt;/code>, 就可以安裝 docker 並建立 docker network，安裝的過程中，需輸入主機使用者密碼，此使用者須有 sudo 權限，才可以正確安裝。正確安裝後，可以顯示 docker 版本資訊，如圖 5 所示&lt;/p>
+&lt;p>
+ &lt;img src="%e4%b9%8b%e5%be%8c%e8%a3%9c" alt="圖5: docker版本" />&lt;/p>
+&lt;p>若 create_docker_env.sh 正常完成，停留在圖 6 的畫面，按下Ctrl+c 即可跳出。&lt;/p>
+&lt;p>![圖6: 正確的docker狀態]&lt;/p>
+&lt;h1 id="pedsa-啟動注意事項及各服務說明">
+ PEDSA 啟動注意事項及各服務說明
+ &lt;a class="anchor" href="#pedsa-%e5%95%9f%e5%8b%95%e6%b3%a8%e6%84%8f%e4%ba%8b%e9%a0%85%e5%8f%8a%e5%90%84%e6%9c%8d%e5%8b%99%e8%aa%aa%e6%98%8e">#&lt;/a>
+&lt;/h1>
+&lt;p>啟動系統前，需先確認表 6 所列的通訊埠(port)是否開通:&lt;/p>
+&lt;p>表5: 服務端需要開通的通訊埠&lt;/p>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>通訊埠號&lt;/th>
+ &lt;th>說明&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>22&lt;/td>
+ &lt;td>服務端與使用端登入連線用&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>11016&lt;/td>
+ &lt;td>服務端 API 通訊埠&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>443&lt;/td>
+ &lt;td>服務端 SSL 通訊埠&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>11100&lt;/td>
+ &lt;td>資料庫&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>6922&lt;/td>
+ &lt;td>服務端 Hadoop&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>5922&lt;/td>
+ &lt;td>K 匿名與使用端 Hadoop&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>5088&lt;/td>
+ &lt;td>合成 API&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>5915&lt;/td>
+ &lt;td>K匿名與使用端API&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>5090&lt;/td>
+ &lt;td>差分API&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;p>如前所述(執行環境安裝的 step4)，經由 step4 步驟啟動後，會產生 PETWEB 、 PETservice 、 PET_join 、 PETSHadoop 、PETSWebservice、pets_dp 及 pets_syn 等 7 個 docker 服務叢集，可執行&lt;code>docker stack ls&lt;/code> 得到相關資訊。服務端系統的服務如下表內容:&lt;/p></description></item><item><title/><link>https://pedsa-wiki.cape.tw/zh/docs/chapter1/gau_1/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pedsa-wiki.cape.tw/zh/docs/chapter1/gau_1/</guid><description>&lt;h1 id="隱私共享優化佈署方案gau">
  隱私共享優化佈署方案(GAU)
  &lt;a class="anchor" href="#%e9%9a%b1%e7%a7%81%e5%85%b1%e4%ba%ab%e5%84%aa%e5%8c%96%e4%bd%88%e7%bd%b2%e6%96%b9%e6%a1%88gau">#&lt;/a>
 &lt;/h1>
