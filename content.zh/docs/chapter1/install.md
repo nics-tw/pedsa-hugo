@@ -21,15 +21,17 @@ PEDSA 啟動:會介紹如何啟動服務端及使用端系統，詳細的內容�
 
 表1: 基準資料特徵
 
-| 資料筆數 | 預估大小 | 欄位 | 直接識別 | 間接識別 | 敏感欄位 |
-| 1,000,000 | 1G | 15 | 2 | 6 | 4 |
+| 資料筆數  | 預估大小 | 欄位 | 直接識別 | 間接識別 | 敏感欄位 |
+| --------- | -------- | ---- | -------- | -------- | -------- |
+| 1,000,000 | 1G       | 15   | 2        | 6        | 4        |
 
 表2: 建議之硬體資源
 
 | 最低需求 | CPU(core) | RAM(GB) | Storage(GB) |
-| K匿名 | 8 | 16 | 1024 |
-| 合成資料 | 8 | 32 | 512 |
-| 差分隱私 | 4 | 16 | 256 |
+| -------- | --------- | ------- | ----------- |
+| K匿名    | 8         | 16      | 1024        |
+| 合成資料 | 8         | 32      | 512         |
+| 差分隱私 | 4         | 16      | 256         |
 
 PEDSA 建議於 Linux Ubuntu 22.04 LTS 版本進行安裝。表 1 及表 2 的推論過程放在附錄的"環境評估資源"段落，方便導入機關做進一步探討。
 
@@ -51,12 +53,13 @@ source tar -xzvf deploy_PEDSA_1012.tar.gz
 
 表3: 部署檔案說明
 
-| 檔案名稱 | 說明 |
-| deploy_pedsa.sh | 部署 PEDSA 的安裝程式，即是解壓縮下面的\*.tar.gz，並修正目錄權限。 |
-| pedsa_s.tar.gz | PEDSA 服務端的程式及設定檔等，解開的目錄名稱為 pedsa_s |
-| pedsa_c.tar.gz | PEDSA 使用端的程式及設定檔，解開的目錄名稱為 pets_dir_v1 |
-| pedsa_images.tar.gz | PEDSA 系統所需映像檔，解開的目錄名稱為 pedsa_images |
-| dockerd-src-v26-withTLSCert1012.tar.gz | docker 離線安裝程式 ，解開的目錄名稱為 dockerd-src |
+| 檔案名稱                               | 說明                                                               |
+| -------------------------------------- | ------------------------------------------------------------------ |
+| deploy_pedsa.sh                        | 部署 PEDSA 的安裝程式，即是解壓縮下面的\*.tar.gz，並修正目錄權限。 |
+| pedsa_s.tar.gz                         | PEDSA 服務端的程式及設定檔等，解開的目錄名稱為 pedsa_s             |
+| pedsa_c.tar.gz                         | PEDSA 使用端的程式及設定檔，解開的目錄名稱為 pets_dir_v1           |
+| pedsa_images.tar.gz                    | PEDSA 系統所需映像檔，解開的目錄名稱為 pedsa_images                |
+| dockerd-src-v26-withTLSCert1012.tar.gz | docker 離線安裝程式 ，解開的目錄名稱為 dockerd-src                 |
 
 #### PEDSA 服務端系統之安裝步驟
 
@@ -114,12 +117,12 @@ source ./petsStartUp.sh
 
 安裝後須注意下列狀況:
 
-- 若是在 Step2 看到下載目錄不存在的提示或是無法下載檔案，則執行`source ./mountDownloadFilePATH.sh`，執行過程需輸入以下參數：
+- 若是在 Step2 看到下載目錄不存在的提示或是無法下載檔案，則執行`source ./mountDownloadFilePATH.sh`，執行過程需輸入以下參數與後續步驟：
   - 輸入 PEDSA 安裝目錄: 輸入服務端 pedsa_s 的安裝位置
   - Host User Password: 輸入主機使用者密碼，若是沒有使用者密碼則不需輸入
-    執行完畢需重新執行 `source ./petsStartUp.sh`。
+  - 執行完畢需重新執行 `source ./petsStartUp.sh`。
 - 若發現使用端無法上傳資料給服務端，則執行`source ./gen_ssh_key.sh`，執行過程有數個提示如下：
-  - 輸入 PEDSA 使用端的安裝目錄: 當 pets_dir_v1 的路徑為 /home/itripedsa/deploy_PEDSA/pets_dir_v1 則安裝目錄取 /home/itri-pedsa/deploy_PEDSA
+  - 輸入 PEDSA 使用端的安裝目錄: 當 pets_dir_v1 的路徑為 /home/itripedsa/deploy_PEDSA/pets_dir_v1 則安裝目錄為 /home/itri-pedsa/deploy_PEDSA
   - 輸入 PEDSA 使用端的使用者名稱: 安裝使用端主機的使用者名稱
   - 輸入 PEDSA 使用端的使用者密碼: 安裝使用端主機的使用者密碼
   - 輸入 PEDSA 使用端的 IP: 安裝使用端主機的 IP 地址
