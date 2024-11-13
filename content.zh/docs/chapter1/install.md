@@ -144,3 +144,15 @@ source ./initialSystem.sh
 - 輸入 `PEDSA 服務端`安裝目錄: 當 petsa_s 的路徑為 /home/itripedsa/deploy_PEDSA/petsa_s 則安裝目錄取 /home/itri-pedsa/deploy_PEDSA
 - 輸入 `PEDSA 服務端`提供的使用者名稱: 安裝服務端主機的使用者名稱
 - 主機 IP: 輸入安裝服務端主機的 IP 地址
+
+#### PEDSA 系統服務所使用的軟體
+
+| PEDSA使用軟體程式 | 版本  |
+| ----------------- | ----- |
+| React             | 11.10 |
+| Next JS           | 12.1  |
+| .NET Core C#      | 3.1   |
+| Python            | 3.8   |
+| Hadoop            | 2.7.4 |
+| Spark             | 2.3.1 |
+| MariaDB           | 10.3  |
