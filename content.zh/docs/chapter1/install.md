@@ -61,7 +61,7 @@ source tar -xzvf deploy_PEDSA_1012.tar.gz
 | pedsa_images.tar.gz                    | PEDSA 系統所需映像檔，解開的目錄名稱為 pedsa_images                |
 | dockerd-src-v26-withTLSCert1012.tar.gz | docker 離線安裝程式 ，解開的目錄名稱為 dockerd-src                 |
 
-#### PEDSA 服務端系統之安裝步驟
+#### PEDSA 服務端系統之安裝四步驟
 
 ##### Step1
 
@@ -102,7 +102,7 @@ source ./load_docker_imgs.sh
 
 安裝系統需要的映像檔
 
-###### Step4
+##### Step4
 
 ```sh
 cd pedsa_s
@@ -126,3 +126,21 @@ source ./petsStartUp.sh
   - 輸入 PEDSA 使用端的使用者名稱: 安裝使用端主機的使用者名稱
   - 輸入 PEDSA 使用端的使用者密碼: 安裝使用端主機的使用者密碼
   - 輸入 PEDSA 使用端的 IP: 安裝使用端主機的 IP 地址
+
+#### PEDSA 使用端系統之安裝四步驟
+
+Step1~3 與服務端相同
+
+##### Step4
+
+```sh
+cd pets_dir_v1
+source ./initialSystem.sh
+```
+
+安裝使用端，執行過程有數個提示如下:
+
+- 輸入 `PEDSA 使用端`安裝目錄: 當 pets_dir_v1 的路徑為 /home/itripedsa/deploy_PEDSA/pets_dir_v1 則安裝目錄為 /home/itri-pedsa/deploy_PEDSA
+- 輸入 `PEDSA 服務端`安裝目錄: 當 petsa_s 的路徑為 /home/itripedsa/deploy_PEDSA/petsa_s 則安裝目錄取 /home/itri-pedsa/deploy_PEDSA
+- 輸入 `PEDSA 服務端`提供的使用者名稱: 安裝服務端主機的使用者名稱
+- 主機 IP: 輸入安裝服務端主機的 IP 地址
