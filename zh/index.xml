@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>PEDSA 安裝手冊 on PEDSA</title><link>https://nics-tw.github.io/pedsa-hugo/zh/</link><description>Recent content in PEDSA 安裝手冊 on PEDSA</description><generator>Hugo</generator><language>zh</language><atom:link href="https://nics-tw.github.io/pedsa-hugo/zh/index.xml" rel="self" type="application/rss+xml"/><item><title>安裝流程</title><link>https://nics-tw.github.io/pedsa-hugo/zh/docs/chapter1/install/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://nics-tw.github.io/pedsa-hugo/zh/docs/chapter1/install/</guid><description>&lt;p>本系統手冊將描述如何在 Linux Ubuntu 系統上利用 docker 部署微服務架構，進而組成 PEDSA 系統。安裝的流程如圖 3:&lt;/p>
 &lt;p>
- &lt;img src="%e4%bb%a5%e5%be%8c%e8%a3%9c" alt="部署流程圖" /> TODO:&lt;/p>
+ &lt;img src="../../assets/fig3.png" alt="部署流程圖" />&lt;/p>
 &lt;p>系統環境資源建議：此步驟會依據基準資料列出所需的主機的基本需求，導入機關再依據需求的資料量、分析案例規模彈性調整主機的硬體資源。&lt;/p>
 &lt;p>執行環境安裝:在主機上安裝 docker 執行環境，建置 docker 網路及安裝 PEDSA 應用程式。&lt;/p>
 &lt;p>PEDSA 啟動:會介紹如何啟動服務端及使用端系統，詳細的內容於&amp;quot;前置作業及軟硬體介紹&amp;quot;章節解說。&lt;/p>
@@ -73,9 +73,11 @@
 &lt;/h1>
 &lt;p>如前所述(執行環境安裝的 step2)，進入 dockerd-src 目錄，執行&lt;code>source create_docker_env.sh&lt;/code>, 就可以安裝 docker 並建立 docker network，安裝的過程中，需輸入主機使用者密碼，此使用者須有 sudo 權限，才可以正確安裝。正確安裝後，可以顯示 docker 版本資訊，如圖 5 所示&lt;/p>
 &lt;p>
- &lt;img src="%e4%b9%8b%e5%be%8c%e8%a3%9c" alt="圖5: docker版本" />&lt;/p>
+ &lt;img src="../../assets/fig5.png" alt="圖5: docker版本" />&lt;/p>
 &lt;p>若 create_docker_env.sh 正常完成，停留在圖 6 的畫面，按下Ctrl+c 即可跳出。&lt;/p>
-&lt;p>![圖6: 正確的docker狀態]&lt;/p>
+&lt;p>
+ &lt;img src="../../assets/fig6.png" alt="圖6: 正確的docker狀態" />
+圖6: 正確的docker狀態&lt;/p>
 &lt;h1 id="pedsa-啟動注意事項及各服務說明">
  PEDSA 啟動注意事項及各服務說明
  &lt;a class="anchor" href="#pedsa-%e5%95%9f%e5%8b%95%e6%b3%a8%e6%84%8f%e4%ba%8b%e9%a0%85%e5%8f%8a%e5%90%84%e6%9c%8d%e5%8b%99%e8%aa%aa%e6%98%8e">#&lt;/a>
@@ -135,7 +137,8 @@
 &lt;p>通常可以執行 `docker ps -a```，觀察是否有出現錯誤訊息時出現的錯誤，多為 docker 設定出錯，例如容器目錄與外部主機原有的對應關係無法滿足，或是 docker 映像檔版本不合等。&lt;/p>
 &lt;p>當 docker 容器都正常啟動，但 PEDSA 行 &lt;code>docker logs fastapi&lt;/code>，fastapi 是容器名稱，此容器負責前後端的控制流程，可以觀察到哪一個服務出錯，其他的容器名稱可以由 &lt;code>docker ps -a&lt;/code> 指令查詢，容器名稱出現在最後一個欄位，如下圖的 NAMES 欄位。&lt;/p>
 &lt;p>
- &lt;img src="%e8%a3%9c%e5%9c%96" alt="圖12: PEDSA容器名稱" />&lt;/p>
+ &lt;img src="../../assets/fig12.png" alt="圖12: PEDSA容器名稱" />
+圖12: PEDSA容器名稱&lt;/p>
 &lt;h1 id="以瀏覽器開啟-pedsa-網頁沒有反映需如何處理">
  以瀏覽器開啟 PEDSA 網頁沒有反映需如何處理?
  &lt;a class="anchor" href="#%e4%bb%a5%e7%80%8f%e8%a6%bd%e5%99%a8%e9%96%8b%e5%95%9f-pedsa-%e7%b6%b2%e9%a0%81%e6%b2%92%e6%9c%89%e5%8f%8d%e6%98%a0%e9%9c%80%e5%a6%82%e4%bd%95%e8%99%95%e7%90%86">#&lt;/a>
