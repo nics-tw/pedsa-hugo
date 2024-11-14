@@ -1,7 +1,7 @@
 ---
 weight: 1
 bookFlatSection: true
-title: "PEDSA 使用教學"
+title: "PEDSA 安裝教學"
 ---
 
 # 目的
