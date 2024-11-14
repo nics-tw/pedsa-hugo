@@ -1,6 +1,6 @@
 {
-  "name": "PEDSA Wiki",
-  "short_name": "PEDSA Wiki",
+  "name": "PEDSA",
+  "short_name": "PEDSA",
   "start_url": "/pedsa-hugo/",
   "scope": "/pedsa-hugo/",
   "display": "standalone",
