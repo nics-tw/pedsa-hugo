@@ -1,0 +1,1 @@
+navigator.serviceWorker&&navigator.serviceWorker.register("/pedsa-hugo/sw.js",{scope:"/pedsa-hugo/"})

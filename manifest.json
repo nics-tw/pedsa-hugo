@@ -1,14 +1,14 @@
 {
   "name": "PEDSA Wiki",
   "short_name": "PEDSA Wiki",
-  "start_url": "/",
-  "scope": "/",
+  "start_url": "/pedsa-hugo/",
+  "scope": "/pedsa-hugo/",
   "display": "standalone",
   "background_color": "#000000",
   "theme_color": "#000000",
   "icons": [
     {
-      "src": "/favicon.svg",
+      "src": "/pedsa-hugo/favicon.svg",
       "sizes": "512x512"
     }
   ]

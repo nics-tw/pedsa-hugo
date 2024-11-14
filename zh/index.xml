@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>PEDSA 操作方法 on PEDSA Wiki</title><link>https://pedsa-wiki.cape.tw/zh/</link><description>Recent content in PEDSA 操作方法 on PEDSA Wiki</description><generator>Hugo</generator><language>zh</language><atom:link href="https://pedsa-wiki.cape.tw/zh/index.xml" rel="self" type="application/rss+xml"/><item><title>安裝流程</title><link>https://pedsa-wiki.cape.tw/zh/docs/chapter1/install/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pedsa-wiki.cape.tw/zh/docs/chapter1/install/</guid><description>&lt;p>本系統手冊將描述如何在 Linux Ubuntu 系統上利用 docker 部署微服務架構，進而組成 PEDSA 系統。安裝的流程如圖 3:&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>PEDSA 操作方法 on PEDSA Wiki</title><link>https://nics-tw.github.io/pedsa-hugo/zh/</link><description>Recent content in PEDSA 操作方法 on PEDSA Wiki</description><generator>Hugo</generator><language>zh</language><atom:link href="https://nics-tw.github.io/pedsa-hugo/zh/index.xml" rel="self" type="application/rss+xml"/><item><title>安裝流程</title><link>https://nics-tw.github.io/pedsa-hugo/zh/docs/chapter1/install/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://nics-tw.github.io/pedsa-hugo/zh/docs/chapter1/install/</guid><description>&lt;p>本系統手冊將描述如何在 Linux Ubuntu 系統上利用 docker 部署微服務架構，進而組成 PEDSA 系統。安裝的流程如圖 3:&lt;/p>
 &lt;p>
  &lt;img src="%e4%bb%a5%e5%be%8c%e8%a3%9c" alt="部署流程圖" /> TODO:&lt;/p>
 &lt;p>系統環境資源建議：此步驟會依據基準資料列出所需的主機的基本需求，導入機關再依據需求的資料量、分析案例規模彈性調整主機的硬體資源。&lt;/p>
@@ -67,7 +67,7 @@
  &lt;/tr>
  &lt;/tbody>
 &lt;/table>
-&lt;p>PEDSA 建議於 Linux Ubuntu 22.04 LTS 版本進行安裝。表 1 及表 2 的推論過程放在附錄的&amp;quot;環境評估資源&amp;quot;段落，方便導入機關做進一步探討。&lt;/p></description></item><item><title>網路設定</title><link>https://pedsa-wiki.cape.tw/zh/docs/chapter1/network/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pedsa-wiki.cape.tw/zh/docs/chapter1/network/</guid><description>&lt;h1 id="docker-介紹與-docker-環境建置">
+&lt;p>PEDSA 建議於 Linux Ubuntu 22.04 LTS 版本進行安裝。表 1 及表 2 的推論過程放在附錄的&amp;quot;環境評估資源&amp;quot;段落，方便導入機關做進一步探討。&lt;/p></description></item><item><title>網路設定</title><link>https://nics-tw.github.io/pedsa-hugo/zh/docs/chapter1/network/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://nics-tw.github.io/pedsa-hugo/zh/docs/chapter1/network/</guid><description>&lt;h1 id="docker-介紹與-docker-環境建置">
  Docker 介紹與 Docker 環境建置
  &lt;a class="anchor" href="#docker-%e4%bb%8b%e7%b4%b9%e8%88%87-docker-%e7%92%b0%e5%a2%83%e5%bb%ba%e7%bd%ae">#&lt;/a>
 &lt;/h1>
@@ -128,7 +128,7 @@
  &lt;/tr>
  &lt;/tbody>
 &lt;/table>
-&lt;p>如前所述(執行環境安裝的 step4)，經由 step4 步驟啟動後，會產生 PETWEB 、 PETservice 、 PET_join 、 PETSHadoop 、PETSWebservice、pets_dp 及 pets_syn 等 7 個 docker 服務叢集，可執行&lt;code>docker stack ls&lt;/code> 得到相關資訊。服務端系統的服務如下表內容:&lt;/p></description></item><item><title>FAQ</title><link>https://pedsa-wiki.cape.tw/zh/docs/chapter1/faq/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pedsa-wiki.cape.tw/zh/docs/chapter1/faq/</guid><description>&lt;h1 id="當系統安裝好如何確認系統是否正常啟動">
+&lt;p>如前所述(執行環境安裝的 step4)，經由 step4 步驟啟動後，會產生 PETWEB 、 PETservice 、 PET_join 、 PETSHadoop 、PETSWebservice、pets_dp 及 pets_syn 等 7 個 docker 服務叢集，可執行&lt;code>docker stack ls&lt;/code> 得到相關資訊。服務端系統的服務如下表內容:&lt;/p></description></item><item><title>FAQ</title><link>https://nics-tw.github.io/pedsa-hugo/zh/docs/chapter1/faq/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://nics-tw.github.io/pedsa-hugo/zh/docs/chapter1/faq/</guid><description>&lt;h1 id="當系統安裝好如何確認系統是否正常啟動">
  當系統安裝好，如何確認系統是否正常啟動?
  &lt;a class="anchor" href="#%e7%95%b6%e7%b3%bb%e7%b5%b1%e5%ae%89%e8%a3%9d%e5%a5%bd%e5%a6%82%e4%bd%95%e7%a2%ba%e8%aa%8d%e7%b3%bb%e7%b5%b1%e6%98%af%e5%90%a6%e6%ad%a3%e5%b8%b8%e5%95%9f%e5%8b%95">#&lt;/a>
 &lt;/h1>
@@ -151,7 +151,7 @@
 &lt;/h1>
 &lt;p>執行&lt;code>docker ps -a&lt;/code>查詢 MariaDB的容器名稱，再執行&lt;code>docker logs $MariaDB_container_name&lt;/code>
 觀察資料庫是否正常運作，正常會出現&amp;quot; mysqld: ready for connections. &amp;ldquo;訊息。&lt;/p>
-&lt;p>若有出錯，可執行&lt;code>ls -al ~/PETS/pets_hadoop/pets_v1/sourceCode/hadoop/MariaDBdata/&lt;/code> ,觀察的擁有者是否為 999:999，若否，則執行&lt;code>sudo chown -R 999:999 ~/PETS/pets_hadoop/pets_v1/sourceCode/hadoop/MariaDBdata/&lt;/code>&lt;/p></description></item><item><title/><link>https://pedsa-wiki.cape.tw/zh/docs/chapter1/gau_1/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pedsa-wiki.cape.tw/zh/docs/chapter1/gau_1/</guid><description>&lt;h1 id="隱私共享優化佈署方案gau">
+&lt;p>若有出錯，可執行&lt;code>ls -al ~/PETS/pets_hadoop/pets_v1/sourceCode/hadoop/MariaDBdata/&lt;/code> ,觀察的擁有者是否為 999:999，若否，則執行&lt;code>sudo chown -R 999:999 ~/PETS/pets_hadoop/pets_v1/sourceCode/hadoop/MariaDBdata/&lt;/code>&lt;/p></description></item><item><title/><link>https://nics-tw.github.io/pedsa-hugo/zh/docs/chapter1/gau_1/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://nics-tw.github.io/pedsa-hugo/zh/docs/chapter1/gau_1/</guid><description>&lt;h1 id="隱私共享優化佈署方案gau">
  隱私共享優化佈署方案(GAU)
  &lt;a class="anchor" href="#%e9%9a%b1%e7%a7%81%e5%85%b1%e4%ba%ab%e5%84%aa%e5%8c%96%e4%bd%88%e7%bd%b2%e6%96%b9%e6%a1%88gau">#&lt;/a>
 &lt;/h1>
@@ -188,7 +188,7 @@ iv. pass phrase for ./ca-key.pem: iclw200@ ＃這到底是什麼鬼？？？&lt;
 &lt;/li>
 &lt;/ol>
 &lt;p>NOTE: 指令執行完畢會建立docker環境，docker network，及mount下載目錄。安裝過程有幾個可能發生狀況，若是主機是第一次安裝docker環境，並在執行docker的基本指令，如docker ps，出現權限不足的錯誤時，需關閉目前的terminal，再開啟新的terminal再進行後續步驟。 # r u sure ???&lt;/p>
-&lt;p>NOTE:若是看到下載目錄不存在的提示，則需執行mount下載目錄的程式，這會在安裝服務端的步驟(step4)詳述。&lt;/p></description></item><item><title/><link>https://pedsa-wiki.cape.tw/zh/docs/chapter1/tr/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pedsa-wiki.cape.tw/zh/docs/chapter1/tr/</guid><description>&lt;h1 id="隱私共享資料傳輸trtony">
+&lt;p>NOTE:若是看到下載目錄不存在的提示，則需執行mount下載目錄的程式，這會在安裝服務端的步驟(step4)詳述。&lt;/p></description></item><item><title/><link>https://nics-tw.github.io/pedsa-hugo/zh/docs/chapter1/tr/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://nics-tw.github.io/pedsa-hugo/zh/docs/chapter1/tr/</guid><description>&lt;h1 id="隱私共享資料傳輸trtony">
  隱私共享資料傳輸(TR)(TONY)
  &lt;a class="anchor" href="#%e9%9a%b1%e7%a7%81%e5%85%b1%e4%ba%ab%e8%b3%87%e6%96%99%e5%82%b3%e8%bc%b8trtony">#&lt;/a>
 &lt;/h1>
