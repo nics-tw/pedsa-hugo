@@ -137,8 +137,8 @@
 &lt;p>通常可以執行 `docker ps -a```，觀察是否有出現錯誤訊息時出現的錯誤，多為 docker 設定出錯，例如容器目錄與外部主機原有的對應關係無法滿足，或是 docker 映像檔版本不合等。&lt;/p>
 &lt;p>當 docker 容器都正常啟動，但 PEDSA 行 &lt;code>docker logs fastapi&lt;/code>，fastapi 是容器名稱，此容器負責前後端的控制流程，可以觀察到哪一個服務出錯，其他的容器名稱可以由 &lt;code>docker ps -a&lt;/code> 指令查詢，容器名稱出現在最後一個欄位，如下圖的 NAMES 欄位。&lt;/p>
 &lt;p>
- &lt;img src="../../assets/fig12.png" alt="圖12: PEDSA容器名稱" />
-圖12: PEDSA容器名稱&lt;/p>
+ &lt;img src="../../assets/fig12.png" alt="圖12: PEDSA容器名稱" />&lt;/p>
+&lt;p>圖12: PEDSA容器名稱&lt;/p>
 &lt;h1 id="以瀏覽器開啟-pedsa-網頁沒有反映需如何處理">
  以瀏覽器開啟 PEDSA 網頁沒有反映需如何處理?
  &lt;a class="anchor" href="#%e4%bb%a5%e7%80%8f%e8%a6%bd%e5%99%a8%e9%96%8b%e5%95%9f-pedsa-%e7%b6%b2%e9%a0%81%e6%b2%92%e6%9c%89%e5%8f%8d%e6%98%a0%e9%9c%80%e5%a6%82%e4%bd%95%e8%99%95%e7%90%86">#&lt;/a>
