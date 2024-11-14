@@ -9,7 +9,8 @@ title: "FAQ"
 
 當 docker 容器都正常啟動，但 PEDSA 行 `docker logs fastapi`，fastapi 是容器名稱，此容器負責前後端的控制流程，可以觀察到哪一個服務出錯，其他的容器名稱可以由 `docker ps -a` 指令查詢，容器名稱出現在最後一個欄位，如下圖的 NAMES 欄位。
 
-![圖12: PEDSA容器名稱](補圖)
+![圖12: PEDSA容器名稱](../../assets/fig12.png)
+圖12: PEDSA容器名稱
 
 # 以瀏覽器開啟 PEDSA 網頁沒有反映需如何處理?
 

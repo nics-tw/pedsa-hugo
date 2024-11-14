@@ -7,11 +7,12 @@ title: "網路設定"
 
 如前所述(執行環境安裝的 step2)，進入 dockerd-src 目錄，執行`source create_docker_env.sh`, 就可以安裝 docker 並建立 docker network，安裝的過程中，需輸入主機使用者密碼，此使用者須有 sudo 權限，才可以正確安裝。正確安裝後，可以顯示 docker 版本資訊，如圖 5 所示
 
-![圖5: docker版本](之後補)
+![圖5: docker版本](../../assets/fig5.png)
 
 若 create_docker_env.sh 正常完成，停留在圖 6 的畫面，按下Ctrl+c 即可跳出。
 
-![圖6: 正確的docker狀態]
+![圖6: 正確的docker狀態](../../assets/fig6.png)
+圖6: 正確的docker狀態
 
 # PEDSA 啟動注意事項及各服務說明
 
@@ -68,7 +69,7 @@ docker service logs pets_service_fastapi
 
 - PEDSA服務端目錄結構:
 
-![圖9: PETS的目錄結構](補圖)
+![圖9: PETS的目錄結構](../../assets/fig9.png)
 
 - docker 服務檢視:
 
@@ -76,7 +77,7 @@ docker service logs pets_service_fastapi
 docker service ls
 ```
 
-![圖10: 組成PEDSA系統之容器]
+![圖10: 組成PEDSA系統之容器](../../assets/fig10.png)
 
 # PEDSA安裝流程介紹 - 使用端
 
