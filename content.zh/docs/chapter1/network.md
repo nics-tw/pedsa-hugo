@@ -58,8 +58,6 @@ docker service logs pets_service_fastapi
 正確的啟動畫面如下圖:
 ![圖8: 正確的 pets_service 啟動畫面](../../../assets/fig8.png)
 
-圖8: 正確的 pets_service 啟動畫面
-
 當服務端正確的啟動，就可以在瀏覽器連接:
 
 - https://IP_addr
