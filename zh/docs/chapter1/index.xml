@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>PEDSA 安裝教學 on PEDSA</title><link>https://nics-tw.github.io/pedsa-hugo/zh/docs/chapter1/</link><description>Recent content in PEDSA 安裝教學 on PEDSA</description><generator>Hugo</generator><language>zh</language><atom:link href="https://nics-tw.github.io/pedsa-hugo/zh/docs/chapter1/index.xml" rel="self" type="application/rss+xml"/><item><title>安裝流程</title><link>https://nics-tw.github.io/pedsa-hugo/zh/docs/chapter1/install/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://nics-tw.github.io/pedsa-hugo/zh/docs/chapter1/install/</guid><description>&lt;p>本系統手冊將描述如何在 Linux Ubuntu 系統上利用 docker 部署微服務架構，進而組成 PEDSA 系統。安裝的流程如圖 3:&lt;/p>
 &lt;p>
- &lt;img src="../../assets/fig3.png" alt="圖3. 部署流程圖" />&lt;/p>
+ &lt;img src="../../../assets/fig3.png" alt="圖3. 部署流程圖" />&lt;/p>
 &lt;p>系統環境資源建議：此步驟會依據基準資料列出所需的主機的基本需求，導入機關再依據需求的資料量、分析案例規模彈性調整主機的硬體資源。&lt;/p>
 &lt;p>執行環境安裝:在主機上安裝 docker 執行環境，建置 docker 網路及安裝 PEDSA 應用程式。&lt;/p>
 &lt;p>PEDSA 啟動:會介紹如何啟動服務端及使用端系統，詳細的內容於&amp;quot;前置作業及軟硬體介紹&amp;quot;章節解說。&lt;/p>
