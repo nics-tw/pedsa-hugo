@@ -5,7 +5,7 @@ title: "安裝流程"
 
 本系統手冊將描述如何在 Linux Ubuntu 系統上利用 docker 部署微服務架構，進而組成 PEDSA 系統。安裝的流程如圖 3:
 
-![部署流程圖](../../assets/fig3.png)
+![部署流程圖](../../../assets/fig3.png)
 
 系統環境資源建議：此步驟會依據基準資料列出所需的主機的基本需求，導入機關再依據需求的資料量、分析案例規模彈性調整主機的硬體資源。
 
@@ -72,7 +72,7 @@ source ./deploy_pedsa.sh
 
 會提示輸入安裝路徑 (\$deploy_dir) ，執行完畢會在\$deploy_dir 會產出 pedsa_s, pets_dir_v1 ,dockerd-src 及 pedsa_images 等目錄，如上表所示，假設$deploy_dir 為 /home/itri-pedsa/ deploy_PEDSA，則有圖 4 的檔案結構:
 
-![圖4: deploy_PEDSA檔案結構](../../assets/fig4.png)
+![圖4: deploy_PEDSA檔案結構](../../../assets/fig4.png)
 
 ##### Step2
 
